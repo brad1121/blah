@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: wordpress
+spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: wordpress
+      version: '23.1.1'
+      sourceRef:
+        kind: OCIRepository
+        name: wordpress
+        namespace: wordpress
+      interval: 1m
+  values:
+    replicaCount: 2
