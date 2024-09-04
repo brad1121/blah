@@ -22,7 +22,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  path: ../../apps
+  path: ./apps
   prune: true
   retryInterval: 10s
   dependsOn:
