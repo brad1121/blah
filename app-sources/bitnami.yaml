@@ -4,5 +4,6 @@ metadata:
   name: bitnami
   namespace: flux-system
 spec:
-  interval: 5m0s
+  interval: 1m0s
   url: oci://registry-1.docker.io/bitnamicharts/wordpress
+
