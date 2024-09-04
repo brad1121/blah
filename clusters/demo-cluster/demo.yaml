@@ -4,10 +4,10 @@ metadata:
   name: wordpress
   namespace: flux-system
 spec:
-  interval: 3m
-  path: ../apps
+  interval: 1m
+  path: ../../apps
   prune: true
-  retryInterval: 2m0s
+  retryInterval: 10s
   dependsOn:
    - name: app-sources  
   sourceRef:
@@ -23,10 +23,10 @@ metadata:
   name: app-sources 
   namespace: flux-system
 spec:
-  interval: 3m
-  path: ../app-sources
+  interval: 1m
+  path: ../../app-sources
   prune: true
-  retryInterval: 2m0s
+  retryInterval: 10s
   sourceRef:
     kind: GitRepository
     name: flux-system
