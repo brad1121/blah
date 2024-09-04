@@ -9,7 +9,7 @@ spec:
       chart: wordpress
       version: '23.1.10'
       sourceRef:
-        kind: OCIRepository
+        kind: HelmRepository
         name: bitnami
         namespace: flux-system
       interval: 1m
